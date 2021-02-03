@@ -28,13 +28,6 @@ module.exports = {
           '1', 
           '2'   
         ],
-  
-        // fallback
-        '/': [
-          '',        /* / */
-          'contact', /* /contact.html */
-          'about'    /* /about.html */
-        ]
       },
       sidebarDepth: 2, // 侧边栏显示2级
     }
