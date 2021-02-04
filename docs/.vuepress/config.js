@@ -6,11 +6,13 @@ module.exports = {
     ],
     base: '/', // 这是部署到github相关的配置
     markdown: {
-      lineNumbers: false // 代码块显示行号
+      lineNumbers: true // 代码块显示行号
     },
     themeConfig: {
       logo: 'assets/logo.jpg',
       nav:[ // 导航栏配置
+        {text: 'lifeRain',link: '/life/'},
+        {text: 'vue 知识', link: '/vue/'},
         {text: '前端基础', link: '/accumulate/' },
         {text: '算法题库', link: '/algorithm/'},
         {text: 'github', link: 'https://github.com/hengtangva'}      
@@ -19,6 +21,7 @@ module.exports = {
       sidebar: {
         '/accumulate/': [
           '/', 
+          '3',
           '1', 
           '2'   
         ],
@@ -28,6 +31,15 @@ module.exports = {
           '1', 
           '2'   
         ],
+
+        '/vue/':[
+          '/',
+          '1'
+        ],
+        '/life/':[
+          '/',
+          '1'
+        ]
       },
       sidebarDepth: 2, // 侧边栏显示2级
     }
