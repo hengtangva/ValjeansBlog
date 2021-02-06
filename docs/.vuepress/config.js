@@ -1,6 +1,6 @@
 module.exports = {
     title: "Valjeanth's blog",
-    description: '我的个人网站',
+    description: '我亦飘零久，十年来，深恩负尽',
     head: [ // 注入到当前页面的 HTML <head> 中的标签
       ['link', { rel: 'icon', href: '/logo.jpg' }], // 增加一个自定义的 favicon(网页标签的图标)
     ],
@@ -20,7 +20,8 @@ module.exports = {
       // 侧边栏配置
       sidebar: {
         '/accumulate/': [
-          '/', 
+          '/',
+          '4', 
           '3',
           '1', 
           '2'   
