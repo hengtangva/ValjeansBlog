@@ -5,8 +5,6 @@
                  v-bind:class="{ active: index === currentSlide }"
                  v-bind:style="{ 'z-index': (slides.length - index), 'background-image': 'url(' + slide.bgImg + ')' }">
                 <div class="slide-inner">
-                    <div class="slide-content">
-                        <h1 class="slide-content-text"><p>{{ slide.headlineFirstLine }}</p><p>{{ slide.headlineSecondLine }}</p></h1><a class="slide-content-cta">Call To Action</a></div>
                     <h2 class="slide-side-text"><span>{{ slide.sublineFirstLine }} / </span><span>{{ slide.sublineSecondLine }}</span></h2></div>
             </div>
         <div class="controls-container">
@@ -34,7 +32,7 @@ export default {
         isFirstLoad: true,
         slides: [
             {
-                headlineFirstLine: "2",
+                headlineFirstLine: "1",
                 headlineSecondLine: "",
                 sublineFirstLine: "",
                 sublineSecondLine: "",
