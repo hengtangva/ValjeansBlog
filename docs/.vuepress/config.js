@@ -21,6 +21,8 @@ module.exports = {
       sidebar: {
         '/accumulate/': [
           '/',
+          '10',
+          '9',
           '8',
           '7',
           '6',
@@ -43,7 +45,8 @@ module.exports = {
         ],
         '/life/':[
           '/',
-          '1'
+          '1',
+          '2',
         ]
       },
       sidebarDepth: 2, // 侧边栏显示2级
