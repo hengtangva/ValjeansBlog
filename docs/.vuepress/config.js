@@ -11,25 +11,29 @@ module.exports = {
     themeConfig: {
       logo: 'assets/logo.jpg',
       nav:[ // 导航栏配置
+        {text: '前端进阶',link: '/project/'},
         {text: 'lifeRain',link: '/life/'},
         {text: 'vue 知识', link: '/vue/'},
         {text: '前端基础', link: '/accumulate/' },
-        {text: '算法题库', link: '/algorithm/'},
+        {text: '算法基础', link: '/algorithm/'},
         {text: 'github', link: 'https://github.com/hengtangva'}      
       ],
       // 侧边栏配置
       sidebar: {
         '/accumulate/': [
           '/',
-          '23','22','21',
+          '28','27','26','25','24','23','22','21',
           '20','19','18','17','16','15','14','13','12','11',
           '10','9','8','7','6','5','4', '3','2', '1'   
+        ],
+        '/project/' : [
+          '/',
+          '2','1'
         ],
   
         '/algorithm/': [
           '/',  
-          '1', 
-          '2'   
+          '1', '2'   
         ],
 
         '/vue/':[
