@@ -7,16 +7,27 @@
     <title>Document</title>
 </head>
 <style>
-    /deep/.parent{
-        color: blue;
+    .parent>div{
+        height: 50px;
+        height: 50px;
+        line-height: 50px;
     }
-    .child {
-        color: black;
+    .child1 {
+        background-color: lightcoral;
+    }
+    .child2 {
+        background-color: lightgreen;
+        position: relative;
+        bottom: 20px;
+        z-index: -1;
     }
 </style>
 <body>
     <div class='parent'>
-        <div class='child'>
+        <div class='child1'>
+            what color do I look?
+        </div>
+        <div class='child2'>
             what color do I look?
         </div>
     </div>

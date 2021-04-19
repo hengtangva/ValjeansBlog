@@ -8,13 +8,46 @@
 </head>
 <style>
 .parent {
-        width: 100vw;
-        line-height: 56vw;
-        height: 56vw;
-        background-color: lightseagreen;
+        width: 300px;
+        /* height: 300px; */
+        background: lightcoral;
+        /* display: flow-root; */
+        ;
     }
+/* .parent::after {
+    display: block;
+    height: 0;
+    clear: both;
+    content: '';
+    
+} */
+
+.blue {
+    background: blue;
+    float:left;
+    width: 50px;
+    height: 90px;
+}
+.red {
+    background: red;
+    float: right;
+    width: 50px;
+    height: 50px;
+}
+.green {
+    background: green;
+    width: 50px;
+    height: 50px;
+    /* 这里为 green 元素重新创建了一个 BFC */
+    /* display: flow-root; */
+    clear: both;
+}
 </style>
 <body>
-    <div class="parent"></div>
+    <div class="parent">
+        <div class='blue'>123</div>
+        <div class='red'>123</div>
+        <div class='green'>123</div>
+    </div>
 </body>
 </html>
