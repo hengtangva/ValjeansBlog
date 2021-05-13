@@ -1,19 +1,24 @@
-let obj = {
-    arr : [1,2,3,4],
-    name: 'valjean'
+let arr = [1,2,3,4];
+
+for(let i = 0; i < arr.lenth ; i++) {
+    Object.definePropertie(arr, i, {
+        set() {
+            console.log('set')
+        },
+        get() {
+            console.log('get')
+        }
+    })
 }
-
-let proxy = new Proxy(obj, {
-    set(target, key, prop, rev) {
-        console.log('被改变了',target, key, prop, rev);
-        return Reflect.set(...arguments);
+let proxy = new Proxy(arr, {
+    get() {
+        console.log('proxy, get')
     },
-    get(target, key, prop, rev) {
-        console.log('被访问了',target, key, prop, rev);
-        return Reflect.get(...arguments);
+    set() {
+        console.log('proxy set')
     }
-})
-
-proxy.age=18;
-proxy.name = 'coder';
-proxy.arr[1] = 9;
+});
+arr[1] = 2;
+proxy[1] = 1;
+// proxy.pop();
+console.log(proxy.__proto__, arr.__proto__)
