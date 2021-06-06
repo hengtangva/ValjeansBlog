@@ -7,22 +7,33 @@
     <title>Document</title>
 </head>
 <style>
-  .trangle {
-      box-sizing: content-box;
-      width: 50;
-      height:50;
-      border: 50px solid #fff;
-      border-left: 50px solid red;
-      transform: rotate(-90deg);
-      color:blue;
-  }
-  .trangle h2 {
-      color: transparent;
-  }
+ .box {
+   display: flex;
+ }
+ .box>div{
+   background-image: url('./assets/card.png');
+   width: 80px;
+   height: 120px;
+   margin-right: 20px;
+   border: 2px solid #0f0;
+   border-radius: 5px;
+ }
+ .box :nth-child(1){
+   background-position: -80px -120px;
+ }
+ .box :nth-child(2){
+   background-position: -160px -120px;
+ }
+ .box :nth-child(3){
+   background-position: -240px -120px;
+ }
 </style>
-
 <body>
-    <div class='trangle'><h2>444</h2></div>
+   <div class='box'>
+     <div></div>
+     <div></div>
+     <div></div>
+   </div>
 </body>
 
 </html>

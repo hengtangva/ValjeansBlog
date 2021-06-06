@@ -1,24 +1,14 @@
-let arr = [1,2,3,4];
-
-for(let i = 0; i < arr.lenth ; i++) {
-    Object.definePropertie(arr, i, {
-        set() {
-            console.log('set')
-        },
-        get() {
-            console.log('get')
-        }
+function* bar() {
+    const result = yield new Promise((resolve, reject) => {
+        // 模拟网络请求
+        setTimeout(() => {
+            resolve('hello generater')
+        },1000)
     })
+    console.log(result)
 }
-let proxy = new Proxy(arr, {
-    get() {
-        console.log('proxy, get')
-    },
-    set() {
-        console.log('proxy set')
-    }
-});
-arr[1] = 2;
-proxy[1] = 1;
-// proxy.pop();
-console.log(proxy.__proto__, arr.__proto__)
+
+const it = bar();
+it.next().value.then((res) => {
+    it.next(res);
+})
