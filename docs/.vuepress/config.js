@@ -25,7 +25,12 @@ module.exports = {
       sidebar: {
         '/react/': [
           '/',
-          'redux-redux-devtools',
+          '关于react更新机制的了解',
+          'Mobx-1-创建typescript项目','Mobx-2-版本相关的问题','Mobx-3-可观测状态','Mobx-4-mobx对何做出反应',
+          'Mobx-5-mobx响应-computed','Mobx-6-mobx响应-autorun','Mobx-7-mobx响应-reaction','Mobx-8-mobx响应-when',
+          'Mobx-9-状态改变-使用action','Mobx-10-异步action改变状态',
+          '路由懒加载',
+          'redux-redux-devtools','redux-项目中使用redux','redux-react-redux的hooks',"redux-ImmutableJS优化reducer",
           'Router-Dynamic-routing','Router-Pass-parameter','Router-router-file'
         ],
         '/net/': [
@@ -37,6 +42,7 @@ module.exports = {
         ],
         '/accumulate/': [
           '/',
+          'setTimeout和interval和rqanimation',
           '变量提升','代理和反射','迭代器','生成器','异步的最终解决方案','获取dom的返回元素','模板字符串',
           '判断数据类型','强制类型转换','箭头函数',
           '事件代理','promise基础','手写promise','promise用es5实现','new操作符','meta的用法',
@@ -47,6 +53,7 @@ module.exports = {
         ],
         '/css/': [
           '/',
+          '毛玻璃的制作',
           'text-indent的学习',
           'position的学习','display的学习','让一个div消失视野','z-index的使用',
           '盒子模型','盒子的阴影',
@@ -59,24 +66,29 @@ module.exports = {
         ],
         '/advance/' : [
           '/',
-          '闭包','打包文件的hash名','客户端和服务端渲染','垃圾回收','浏览器缓存机制','内存泄漏','前端路由',
+          '函数柯里化',
+          '性能优化','正则表达式',
+          'Promise进阶','闭包','打包文件的hash名','客户端和服务端渲染','垃圾回收','浏览器缓存机制','内存泄漏','前端路由',
           '使用token','事件循环','手写题目','手写flat','输入url到生成页面','图片懒加载','网络攻击','重绘和回流',
           'axios的基本使用','axios高级','jsonp原理','offset的高度','防抖和节流','跨域','浏览器存储','ajax工作原理'
         ],
         '/computerBase/':[
           '/',
-          'git学习-git-stash','git学习-合并分支','git学习-合并冲突','git学习-合并原理',
-          '数组的push的返回值',
-          '9','8','7','6','5','4','3','2','1'
+          '自动测试工具playwright使用','windows切换node版本-nvs',
+          'git学习-生成ssh-key以及git的初始配置','git学习-git-stash','git学习-合并分支','git学习-合并冲突','git学习-合并原理',
+          '数组的push的返回值','sass版本不兼容vue的问题',
+          '9','8','7','6','5','4','3'
         ],
 
       
         '/algorithm/': [
           '/',  
-          '背包问题','动态规划','深度优先搜索','广度优先搜索','回溯法','贪心',
-          '二叉树的遍历','二叉树的构建','搜索二叉树',
+          '摩尔投票',
+          '背包问题','动态规划','动态规划-无后效性','动态规划-子序列问题',
+          '深度优先搜索','广度优先搜索','回溯法','贪心',
+          '二叉树的遍历','二叉树的构建','二叉树的其他操作','搜索二叉树',
           '二分查找','二分查找寻找最优解','双指针', '矩阵的搜索',
-          '链表','排序','数学建模','栈','前缀和','哈希和map',
+          '链表','数组','排序','数学建模','栈','前缀和','哈希和map','原地hash',
           '位运算-异或',
           '面试碰到的题目'   
         ],
